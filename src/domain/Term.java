@@ -15,17 +15,16 @@ public class Term {
         this.startDate = startDate;
     }
 
-
-    public String toString() {
-        return name;
-    }
-
     public String getName() {
         return name;
     }
 
     public Date getStartDate() {
         return startDate;
+    }
+
+    public String toString() {
+        return name;
     }
 
 }
