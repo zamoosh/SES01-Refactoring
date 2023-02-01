@@ -23,6 +23,7 @@ public class Term {
         return startDate;
     }
 
+    @Override
     public String toString() {
         return name;
     }

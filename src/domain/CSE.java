@@ -4,7 +4,7 @@ import java.util.Date;
 
 public class CSE {
     private Course course;
-    private int section = 1;
+    private Integer section = 1;
     private Date examDate;
 
     public CSE(Course course) {
@@ -16,7 +16,7 @@ public class CSE {
         this.examDate = examDate;
     }
 
-    public CSE(Course course, Date examDate, int section) {
+    public CSE(Course course, Date examDate, Integer section) {
         this.course = course;
         this.section = section;
         this.examDate = examDate;
@@ -30,10 +30,11 @@ public class CSE {
         return examDate;
     }
 
-    public int getSection() {
+    public Integer getSection() {
         return section;
     }
 
+    @Override
     public String toString() {
         return course.getName() + " - " + section;
     }
